@@ -693,22 +693,23 @@ section {
   background-position: 0rem 7rem;
   position: relative;
   top: 0rem;
-  color: black;
-  filter: brightness(80%);
+  /*! color: black; */
+  /*! filter: brightness(80%); */
   font-size: 50%;
-  background-color: rgba(0, 0, 0, .7);
+  /*! background-color: rgba(0, 0, 0, .7); */
 }
 
 .arcade {
   height: 7rem;
-  background-image: url(images/mobile/image-night-arcade.jpg);
+  /*! background-image: url(images/mobile/image-night-arcade.jpg); */
   background-size:   cover;
   background-position: 0rem 0rem;
   position: relative;
   top: 1rem;
   /*! background-color: rgba(0, 0, 0, .8); */
   /*! filter: brightness(70%); */
-  /*! opacity: 80%; */
+  /*! opacity: 64.3%; */
+  /*! background-color: black; */
 }
 
 .soccer {
@@ -748,7 +749,6 @@ section {
 }
 
 .curiosity {
-  background-image: url(images/mobile/image-curiosity.jpg);
   height: 8rem;
   background-size: cover;
   background-position: top;
@@ -757,7 +757,6 @@ section {
 }
   
 .fisheye {
-  background-image: url(images/mobile/image-fisheye.jpg);
   height: 8rem;
   background-size: cover;
   position: relative;
@@ -796,9 +795,11 @@ section {
 .arcade-title.title {
 }
 .arcade-title.title {
-  width: 8rem;
-  top: 1rem;
+  width: 23rem;
+  top: -3rem;
   left: 1rem;
+  /*! filter: brightness(100%); */
+  z-index: 5;
 }
 .soccer-title.title {
   top: 5rem;
@@ -809,12 +810,14 @@ section {
   left: 1rem;
 }
 .curiosity-title.title {
-  top: 5rem;
+  top: -3rem;
   left: 1rem;
+  z-index: 5;
 }
 .fisheye-title.title {
-  top: 4rem;
+  top: -3rem;
   left: 1rem;
+  z-index: 5;
 }
 .credit {
   background: black;
@@ -841,10 +844,30 @@ section {
   position: relative;
   left: -1rem;
 }
-html {
-  /*! overflow-x: hidden; */
+
+.arcade-img {
+  background-image: url(images/mobile/image-night-arcade.jpg);
+  background-size: contain;
+  width: 18rem;
+  height: 7rem;
+  filter: brightness(90%);
 }
-html {
-  /*! overflow-x: hidden; */
+.curiosity-img {
+  background-image: url(images/mobile/image-curiosity.jpg);
+  width: 18rem;
+  height: 8rem;
+  background-size: cover;
+  background-position-y: 8rem;
+  background-repeat: none;
+  background-position-x: -4rem;
+  filter: brightness(90%);
+}
+.fisheye-img {
+  background-image: url(images/mobile/image-fisheye.jpg);
+  width: 18rem;
+  height: 8rem;
+  background-size: cover;
+  background-position-y: 24rem;
+  filter: brightness(90%);
 }
 }
