@@ -15,7 +15,7 @@ html {
   }
 
   header#hero {
-    background-image: url("file:///C:/Users/ilove/Documents/projects/loopstudios-landing-page-main/images/desktop/image-hero.jpg");
+    background-image: url("/projects/loopstudios-landing-page-main/images/desktop/image-hero.jpg");
     width: 100%;
     background-size: cover;
     position: relative;
