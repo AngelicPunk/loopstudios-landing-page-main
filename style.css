@@ -190,7 +190,7 @@ div.intro {
   
 #grid {
   padding: 12rem;
-  grid-gap: 0rem;
+  grid-gap: 2rem;
   overflow: none;
   position: relative;
 }
@@ -238,7 +238,7 @@ display: inline-grid;
 h6.title {
   font-size: 2rem;
   color: white;
-  top: -7rem;
+  top: 21rem;
   position: relative;
   width: 2rem;
   left: 3rem;
@@ -246,6 +246,35 @@ h6.title {
   letter-spacing: .1rem;
   z-index: 5;
   
+}
+
+  
+.earth-title.title {
+  position: relative;
+  top: 21rem;
+}
+.earth:hover {
+  color: white;
+  filter: opacity(70%);
+  background-color: white;
+}
+  
+.earth {
+  background-image: url(images/desktop/image-deep-earth.jpg );
+  height: 28rem;
+  width: 16rem;
+}
+
+.arcade {
+  background-image: url(images/desktop/image-night-arcade.jpg);
+  height: 28rem;
+  width: 16rem;
+}
+
+.arcade:hover {
+  color: white;
+  filter: opacity(70%);
+  background-color: white;
 }
 
 .arcade-title {
@@ -257,6 +286,18 @@ h6.title {
   left: 3rem;
   font-weight: 200;
   letter-spacing: .1rem;
+}
+
+.soccer {
+  background-image: url(images/desktop/image-soccer-team.jpg);
+  height: 28rem;
+  width: 16rem;
+}
+
+.soccer:hover {
+  color: white;
+  filter: opacity(70%);
+  background-color: white;
 }
 
 .soccer-title2 {
@@ -285,6 +326,17 @@ h6.title {
   font-weight: 200;
 }
 
+.car {
+  background-image: url(images/desktop/image-grid.jpg);
+  height: 28rem;
+  width: 16rem;
+}
+
+.car:hover {
+  color: white;
+  filter: opacity(70%);
+  background-color: white;
+}
 .car-title {
   font-size: 2rem;
   color: white;
@@ -295,15 +347,40 @@ h6.title {
   font-weight: 200;
 }
 
+
+.up-above {
+  background-image: url(images/desktop/image-from-above.jpg);
+  height: 28rem;
+  width: 16rem;
+}
+
+.up-above:hover {
+  color: white;
+  filter: opacity(70%);
+  background-color: white;
+}
+
 .up-above-title {
   font-size: 2rem;
   color: white;
   top: -5rem;
   position: relative;
   width: 10rem;
-  left: 2rem;
+  /*! left: 2rem; */
   font-weight: 200;
   margin: -4rem -1rem;
+}
+
+.borealis {
+  background-image: url(images/desktop/image-pocket-borealis.jpg);
+  height: 28rem;
+  width: 16rem;
+}
+
+.borealis:hover {
+  color: white;
+  filter: opacity(70%);
+  background-color: white;
 }
 
 .borealis-title {
@@ -316,6 +393,18 @@ h6.title {
   font-weight: 200;
 }
 
+.curiosity {
+  background-image: url(images/desktop/image-curiosity.jpg);
+  height: 28rem;
+  width: 16rem;
+}
+
+.curiosity:hover {
+  color: white;
+  filter: opacity(70%);
+  background-color: white;
+}
+
 .curiosity-title {
   font-size: 2rem;
   color: white;
@@ -324,6 +413,18 @@ h6.title {
   width: 10rem;
   left: 2rem;
   font-weight: 200;
+}
+
+.fisheye {
+  background-image: url(images/desktop/image-fisheye.jpg);
+  height: 28rem;
+  width: 16rem;
+}
+
+.fisheye:hover {
+  color: white;
+  filter: opacity(70%);
+  background-color: white;
 }
 
 .fisheye-title {
@@ -436,20 +537,21 @@ h6.title {
 
 @media only screen and (max-width: 600px) {
   html {
-    overflow-x: hidden;
+    /*! overflow-x: hidden; */
   }
   
   #hero {
    background-image: url("images/mobile/image-hero.jpg");
     background-size: cover;
     height: 40rem;
+   /*! padding-bottom: 15rem; */
   }
   
   .logo {
   width: 12rem;
-  top: 1rem;
+  top: 3rem;
   position: absolute;
-  left: 1rem;
+  left: 4rem;
   height: 2rem;
 }
 
@@ -464,10 +566,6 @@ h6.title {
   top: 0rem;
 }
 
-  span:nth-last-child():active {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
   
  #links {
    color: white;
@@ -554,5 +652,199 @@ h6.title {
 }
   
 
+section {
+}
+.vr-img {
+  padding-top: 5rem;
+  /*! transform: scale(8%); */
+  width: 19rem;
+  margin: 1rem 1.5rem;
+}
+.leader {
+  font-size: 2rem;
+  margin: 0 5rem;
+}
+.vr.intro {
+  font-size: 2rem;
+  margin: 0 2.2rem;
+}
+.intro-desc {
+  font-size: .8rem;
+  margin: 0rem 3rem;
+  text-align: center;
+  color: grey;
+  font-weight: 600;
+}
 
+  
+.button {
+  display: none;
+}
+.row {
+  text-align: center;
+  margin: 0rem 3.5rem;
+  padding-top: 7rem;
+}
+.earth {
+  height: 7rem;
+  /*! margin-bottom: -3rem; */
+  background-image: url(images/mobile/image-deep-earth.jpg);
+  background-size: cover;
+  background-position: 0rem 7rem;
+  position: relative;
+  top: 0rem;
+  color: black;
+  filter: brightness(80%);
+  font-size: 50%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.arcade {
+  height: 7rem;
+  background-image: url(images/mobile/image-night-arcade.jpg);
+  background-size:   cover;
+  background-position: 0rem 0rem;
+  position: relative;
+  top: 1rem;
+  /*! background-color: rgba(0, 0, 0, .8); */
+  /*! filter: brightness(70%); */
+  /*! opacity: 80%; */
+}
+
+.soccer {
+  height: 8rem;
+  background-image: url(images/mobile/image-soccer-team.jpg);
+  /*! background-position: cover; */
+  background-size: cover;
+  background-position: -3rem 0rem;
+  /*! padding: 2rem; */
+  position: relative;
+  top: 2rem;
+}
+
+.car {
+  background-image: url(images/mobile/image-grid.jpg);
+  height: 8rem;
+  background-size: cover;
+  position: relative;
+  top: 3rem;
+}
+
+.up-above {
+  background-image: url(images/mobile/image-from-above.jpg);
+  height: 8rem;
+  background-size: cover;
+  position: relative;
+  top: 4rem;
+}
+
+.borealis {
+  background-image: url(images/mobile/image-pocket-borealis.jpg);
+
+  height: 8rem;
+  background-size: cover;
+  position: relative;
+  top: 5rem;
+}
+
+.curiosity {
+  background-image: url(images/mobile/image-curiosity.jpg);
+  height: 8rem;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  top: 6rem;
+}
+  
+.fisheye {
+  background-image: url(images/mobile/image-fisheye.jpg);
+  height: 8rem;
+  background-size: cover;
+  position: relative;
+  top: 7rem;
+}  
+
+  .creations {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+} 
+  
+.up-above-title.title {
+  width: 13rem;
+  top: 2rem;
+  left: 1rem;
+}
+.car {
+}
+.car-title.title {
+  top: 4rem;
+  left: 1rem;
+}
+  
+  
+.title {
+  font-weight: lighter;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+}
+.earth-title.title {
+  top: 2rem;
+  width: 6rem;
+  left: 1rem;
+}
+.arcade-title.title {
+}
+.arcade-title.title {
+  width: 8rem;
+  top: 1rem;
+  left: 1rem;
+}
+.soccer-title.title {
+  top: 5rem;
+  left: 1rem;
+}
+.borealis-title.title {
+  top: 4rem;
+  left: 1rem;
+}
+.curiosity-title.title {
+  top: 5rem;
+  left: 1rem;
+}
+.fisheye-title.title {
+  top: 4rem;
+  left: 1rem;
+}
+.credit {
+  background: black;
+  position: relative;
+  top: 20rem;
+  height: 48rem;
+  overflow: hidden;
+}
+#footer-links {
+  position: relative;
+  top: 3rem;
+  padding: 0 8rem;
+}
+.attribution {
+  position: relative;
+  top: 9rem;
+  text-align: center;
+  background: black;
+  /*! height: 10rem; */
+  padding-bottom: -1rem;
+}
+.icons {
+  /*! margin: 0 1rem; */
+  position: relative;
+  left: -1rem;
+}
+html {
+  /*! overflow-x: hidden; */
+}
+html {
+  /*! overflow-x: hidden; */
+}
 }
