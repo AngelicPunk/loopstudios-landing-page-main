@@ -641,7 +641,7 @@ h6.title {
   color: white;
   margin: 2rem;
   font-weight: lighter;
-  width: 19rem;
+  width: 21rem;
   border: .2rem white solid;
   padding: 1.2rem;
   left: -1rem;
@@ -706,14 +706,11 @@ section {
   background-position: 0rem 0rem;
   position: relative;
   top: 1rem;
-  /*! background-color: rgba(0, 0, 0, .8); */
-  /*! filter: brightness(70%); */
-  /*! opacity: 64.3%; */
-  /*! background-color: black; */
+
 }
 
 .soccer {
-  height: 8rem;
+  height: 7rem;
   background-image: url(images/mobile/image-soccer-team.jpg);
   /*! background-position: cover; */
   background-size: cover;
@@ -802,7 +799,7 @@ section {
   z-index: 5;
 }
 .soccer-title.title {
-  top: 5rem;
+  top: 4rem;
   left: 1rem;
 }
 .borealis-title.title {
@@ -847,14 +844,14 @@ section {
 
 .arcade-img {
   background-image: url(images/mobile/image-night-arcade.jpg);
-  background-size: contain;
-  width: 18rem;
+  background-size: cover;
+  /*! width: 18rem; */
   height: 7rem;
   filter: brightness(90%);
 }
 .curiosity-img {
   background-image: url(images/mobile/image-curiosity.jpg);
-  width: 18rem;
+  /*! width: 18rem; */
   height: 8rem;
   background-size: cover;
   background-position-y: 8rem;
@@ -864,7 +861,7 @@ section {
 }
 .fisheye-img {
   background-image: url(images/mobile/image-fisheye.jpg);
-  width: 18rem;
+  /*! width: 18rem; */
   height: 8rem;
   background-size: cover;
   background-position-y: 24rem;
