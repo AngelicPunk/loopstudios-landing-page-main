@@ -47,22 +47,9 @@ html {
     width: 100%;
     background-color: white;
     border-radius: 1rem;
-    transition: background-color 0.2s,  transform 0.3s ease-in-out;
   }
 
-  input:checked + .bar {
-    background-color: hsla(0, 100%, 20%, 0.25);
-    transform: rotate(270deg);
-  }
-  
-  input:checked + #bars .bar:nth-child(2) {
-    transform-origin: 50% 50%;
-    transform: rotate(-45deg);
-  }
-  
-  input:checked + #bars .bar:last-child {
-    transform: rotate(45deg) translate(-10px, -9.33333333333333333px);
-  }
+
 
 #links {
     font-family: Alata;
@@ -74,6 +61,8 @@ html {
     padding: 0rem;
     word-spacing: 2rem;
     top: 6rem;
+    transition: 0.3s ease-in-out;
+
   }
 
 
@@ -81,6 +70,8 @@ html {
     text-decoration: underline;
     color: white;
     position: relative;
+    transition: all 0.3s ease-in-out;
+
     /*! top: 5rem; */
     /*! left: 4rem; */
     /*! padding: 4rem; */
@@ -95,7 +86,9 @@ html {
       word-spacing: 14rem;
       padding: .5rem;
       top: -1rem;
-  }
+      transition:  0.3s ease-in-out;
+
+    }
 
 
 .desc {
@@ -555,16 +548,17 @@ h6.title {
   height: 2rem;
 }
 
-.hamburger {
+/* .hamburger {
    display: block;
   z-index: 8;
   /*! float: right; */
-  position: absolute;
+  /* position: absolute; */
   /*! width: 2px; */
-  height: 2rem;
-  right: 0.5rem;
-  top: 0rem;
-}
+  /* height: 2rem; */
+  /* right: 0.5rem; */
+  /* top: 0rem; */
+/* } */ 
+
 
   
  #links {
@@ -574,6 +568,8 @@ h6.title {
     z-index: 6;
    /*! padding: 4rem; */
    height: 40rem;
+   transition: 0.3s ease-in-out;
+
  }
 
  .about, .careers, .events, .products, .support {
@@ -586,37 +582,133 @@ h6.title {
    font-family: Alata, sans-serif;
    text-transform: uppercase;
    font-size: 1.5rem;
+   transition: 0.3s ease-in-out;
+
  }
  
 
  .about:hover, .careers:hover, .events:hover, .products:hover, .support:hover  {
    color: white;
    text-decoration: underline;
- 
+   transition: 0.3s ease-in-out;
+
   }
   
 .links {
   display: none;
   height: 15rem;
- }
+  z-index: 1;
+  transition: 3s ease-in-out;
+}
 
 .links .open {
   display: block;
-  z-index: 5;
+  z-index: 1;
   color: white;
   height: 5rem;
+  transition: 3s ease-in-out;
 
 }
 
-.hamburger .bar {
+/* .bar1, .bar2, .bar3 {
+  transition: 0.2s,  transform 0.3s ease-in-out;
+  position: fixed;
+  top: 5rem;
+} */
+.hamburger {
+  position: fixed;
+  top: auto;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.bar1 {
+  position: sticky;
+  z-index: 10;
+  margin: .3rem;
+  cursor: pointer;
+  display: block;
+  background-color: white;
+  width: 2rem;
+  height: 0.3rem;
+  position: fixed;
+  left: 20.5rem;
+  top: .9rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
+  z-index: 10;
+  cursor: pointer;
+  display: block;
+  width: 2.7rem;
+  height: 0.3rem;
+  position: fixed;
+  left: 20.7rem;
+  top: .9rem;
+  border-radius: 2rem;
+  transition: ease-in;
+}
+
+
+
+.bar2 {
+  position: fixed;
+  z-index: 10;
   margin: .3rem;
   cursor: pointer;
   display: flex;
   background-color: white;
   width: 2rem;
   height: 0.3rem;
-  border-radius: 11rem;
+  position: fixed;
+  left: 20.5rem;
+  top: 1.45rem;
+  border-radius: 2rem;
+  opacity: 100%;
+}
+.hamburger.active .bar:nth-child(4) {
+  opacity: 0%;
+  visibility: hidden;
+  display: none;
+  z-index: 0;
+}
 
+.bar3 {
+  position: fixed;
+  margin: .3rem;
+  cursor: pointer;
+  display: flex;
+  border-radius: 2rem;
+  z-index: 10;
+  background-color: white;
+  width: 2rem;
+  height: 0.3rem;
+  position: fixed;
+  left: 20.5rem;
+  top: 2rem;
+  transition: all 0.35s ease-in-out;
+}
+.hamburger.active .bar:nth-child(2) {
+  transform: translateY(-8px) rotate(-45deg);
+  opacity: 100%;
+  position: fixed;
+  margin: .3rem;
+  cursor: pointer;
+  display: flex;
+  border-radius: 2rem;
+  z-index: 10;
+  background-color: white;
+  width: 2.7rem;
+  height: 0.3rem;
+  position: fixed;
+  left: 20.7rem;
+  top: 1.8rem;
 }
 
   .links li {
@@ -626,6 +718,7 @@ h6.title {
   z-index: 5;
   background-color: black;
   height: 10rem;
+  transition: all 2s ease-in-out;
 }
 
 
@@ -646,6 +739,7 @@ h6.title {
   padding: 1.2rem;
   left: -1rem;
 }
+
 .line1, .line2, .line3 {
   font-size: 2.3rem;
   font-weight: lighter;
