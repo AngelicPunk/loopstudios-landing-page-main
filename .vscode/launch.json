@@ -11,11 +11,13 @@
         "name": "Launch index.html",
         "file": "${workspaceFolder}/index.html"
     },
-        {
-            "type": "pwa-chrome",
-            "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\ilove\\projects\\loopstudios-landing-page-main\\index.html"
-        }
+    {
+        "type": "firefox",
+        "request": "launch",
+        "reAttach": true,
+        "name": "Launch index.html",
+        "file": "${workspaceFolder}/index.html"
+    },
+        
     ]
 }
