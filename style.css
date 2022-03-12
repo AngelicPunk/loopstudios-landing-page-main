@@ -3,6 +3,7 @@
 html {
   position: absolute;
   overflow-x:  hidden;
+  width: 100%;
 }
   
   .attribution { 
@@ -16,7 +17,7 @@ html {
 
   header#hero {
     background-image: url("images/desktop/image-hero.jpg");
-    width: 100%;
+    width: 106%;
     background-size: cover;
     position: relative;
     background-position: center 0rem;
@@ -28,12 +29,11 @@ html {
 }
  
 .logo {
-
+  width: 14rem;
   top: 4rem;
   position: absolute;
-  left: 5rem;
-  height: 3rem;
-  opacity: 85.4%;
+  left: 10%;
+  height: 2.5rem;
 }
    
   .hamburger {
@@ -93,21 +93,23 @@ html {
 
 .desc {
   font-size: 10rem;
-  top: 13rem;
+  top: 15rem;
   position: relative;
-  left: 12rem;
+  left: 13rem;
   border: 0.3rem wheat solid;
-  width: 55rem;
-  height: 18rem;
+  width: 40rem;
+  height: 40%;
   text-align: center;
   font-family: Josefin Sans;
   color: wheat;
   font-weight: lighter;
+  margin: 5%;
+
 }
 
 
 .line1, .line2, .line3 {
-  font-size: 4.8rem;
+  font-size: 5rem;
   font-weight: 388;
   float: left;
 
@@ -137,8 +139,7 @@ div.intro {
   right: 27rem;
   /*! border: black .1rem solid; */
   text-align: left;
-  padding-top: 4rem;
-  padding-left: 6rem;
+  padding: 4rem 6rem;
   left: -8rem;
 }
 
@@ -155,6 +156,7 @@ div.intro {
   top: 7rem;
   height: 39rem;
   z-index: -1;
+  width: 60rem;
 }
 
 .leader {
@@ -172,8 +174,7 @@ div.intro {
   top: 10rem;
   left: 2rem;
   display: grid;
-  transform: scale(120%, 120%);
-  padding: 12rem;
+  padding: 7rem;
 }
 
   
@@ -182,10 +183,11 @@ div.intro {
 }
   
 #grid {
-  padding: 12rem;
+  padding: 7rem 3rem;
   grid-gap: 2rem;
   overflow: none;
-  position: relative;
+  width: 80rem;
+  left: 0;
 }
 
 .see-all {
@@ -195,6 +197,10 @@ div.intro {
   /*! z-index: 2; */
   width: 12rem;
   height: 3rem;
+}
+
+#creations {
+  display: inline-grid;
 }
 
 button {
@@ -209,21 +215,22 @@ button {
   letter-spacing: 0.2rem;
   word-spacing: .5rem;
   position: relative;
-  top: 32rem;
-  left: 36rem;
+  top: 25rem;
+  left: 54rem;
   grid-area: button;
-  display: inline-grid;
   z-index: 1;
 }
 
   .button:hover {
+    letter-spacing: 0.2rem;
+    word-spacing: .5rem;
 background-color: black;
 width: 12rem;
 height: 3rem;
 position: relative;
 color: white;
-top: 32rem;
-left: 36rem;
+top: 25rem;
+left: 54rem;
 /*! grid-area: button; */
 display: inline-grid;
 }
@@ -432,20 +439,22 @@ h6.title {
   
 .container-fluid {
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  left: -13rem;
   /*! top: 31rem; */
 }
 
 
 .creations {
-  /*! grid-area: creations; */
-  display: block;
+  grid-area: creations;
+  display: grid;
   font-size: 4rem;
   padding-right: 56rem;
   font-weight: 200;
   position: relative;
-  left: 1rem;
-  top: 30rem;
+  left: -2rem;
+  top: 29rem;
   padding: 0rem;
+  width: 5rem;
 }
 
 
@@ -530,14 +539,17 @@ h6.title {
 
 @media only screen and (max-width: 800px)  {
   html {
-     overflow-x: hidden
+     overflow-x: hidden;
+     width: 100%;
   }
+  
   
   #hero {
    background-image: url("images/mobile/image-hero.jpg");
     background-size: cover;
     height: 40rem;
    /*! padding-bottom: 15rem; */
+   width: 100%;
   }
   
   .logo {
@@ -620,7 +632,7 @@ h6.title {
   top: auto;
   z-index: 10;
   transition: all 0.3s ease-in-out;
-
+  right: 2rem;
 }
 
 .bar1 {
@@ -633,7 +645,7 @@ h6.title {
   width: 2rem;
   height: 0.3rem;
   position: fixed;
-  left: 20.5rem;
+  right: 3rem;
   top: .9rem;
   border-radius: 2rem;
   transition: all 0.3s ease-in-out;
@@ -649,7 +661,7 @@ h6.title {
   width: 2.7rem;
   height: 0.3rem;
   position: fixed;
-  left: 20.7rem;
+  right: 3rem;
   top: .9rem;
   border-radius: 2rem;
   transition: ease-in;
@@ -667,7 +679,7 @@ h6.title {
   width: 2rem;
   height: 0.3rem;
   position: fixed;
-  left: 20.5rem;
+  right: 3rem;
   top: 1.45rem;
   border-radius: 2rem;
   opacity: 100%;
@@ -690,7 +702,7 @@ h6.title {
   width: 2rem;
   height: 0.3rem;
   position: fixed;
-  left: 20.5rem;
+  right: 3rem;
   top: 2rem;
   transition: all 0.35s ease-in-out;
 }
@@ -707,7 +719,7 @@ h6.title {
   width: 2.7rem;
   height: 0.3rem;
   position: fixed;
-  left: 20.7rem;
+  right: 3rem;
   top: 1.8rem;
 }
 
