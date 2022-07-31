@@ -560,28 +560,29 @@ h6.title {
   height: 2rem;
 }
 
-/* .hamburger {
-   display: block;
-  z-index: 8;
-  /*! float: right; */
-  /* position: absolute; */
-  /*! width: 2px; */
-  /* height: 2rem; */
-  /* right: 0.5rem; */
-  /* top: 0rem; */
-/* } */ 
-
-
   
  #links {
    color: white;
    background-color: black;
+   animation: fadeBlack 1s;
+   animation-fill-mode: both;
     position:absolute;
     z-index: 6;
-   /*! padding: 4rem; */
-   height: 40rem;
-   transition: 0.3s ease-in-out;
+  padding: 0rem 5.8rem;
+  width: 100%;
+    height: 40rem;
+   transition: ..9s cubic-bezier(.68,-0.55,.27,1.55);
+ }
 
+ @keyframes fadeBlack {
+    from{ 
+      background-color: black;
+      opacity: 0%;
+    }
+    to{
+      background-color: black;
+      opacity: 100%;
+    }
  }
 
  .about, .careers, .events, .products, .support {
@@ -628,23 +629,22 @@ h6.title {
   top: 5rem;
 } */
 .hamburger {
-  position: fixed;
-  top: auto;
+  position: sticky;
   z-index: 10;
   transition: all 0.3s ease-in-out;
-  right: 2rem;
+  display: flex;
+  height: 4rem;
+  width: 3rem;
+  flex-flow: column;
+  float: right;
 }
 
 .bar1 {
-  position: sticky;
   z-index: 10;
-  margin: .3rem;
   cursor: pointer;
-  display: block;
   background-color: white;
   width: 2rem;
   height: 0.3rem;
-  position: fixed;
   right: 5rem;
   top: .9rem;
   border-radius: 2rem;
@@ -653,32 +653,26 @@ h6.title {
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(.3rem) rotate(45deg);
   background-color: white;
   z-index: 10;
   cursor: pointer;
-  display: block;
-  width: 2.7rem;
-  height: 0.3rem;
-  position: fixed;
-  right: 5rem;
-  top: .9rem;
+  width: 3rem;
   border-radius: 2rem;
-  transition: ease-in;
+  transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+  position: sticky;
 }
 
 
 
 .bar2 {
-  position: fixed;
   z-index: 10;
-  margin: .3rem;
+  margin: .3rem 0;
   cursor: pointer;
   display: flex;
   background-color: white;
   width: 2rem;
   height: 0.3rem;
-  position: fixed;
   right: 5rem;
   top: 1.45rem;
   border-radius: 2rem;
@@ -692,8 +686,6 @@ h6.title {
 }
 
 .bar3 {
-  position: fixed;
-  margin: .3rem;
   cursor: pointer;
   display: flex;
   border-radius: 2rem;
@@ -701,26 +693,22 @@ h6.title {
   background-color: white;
   width: 2rem;
   height: 0.3rem;
-  position: fixed;
   right: 5rem;
   top: 2rem;
   transition: all 0.35s ease-in-out;
 }
 .hamburger.active .bar:nth-child(2) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(.8rem) rotate(-50deg);
+  transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
   opacity: 100%;
-  position: fixed;
-  margin: .3rem;
   cursor: pointer;
   display: flex;
   border-radius: 2rem;
   z-index: 10;
   background-color: white;
-  width: 2.7rem;
+  width: 2.8rem;
   height: 0.3rem;
-  position: fixed;
-  right: 5rem;
-  top: 1.8rem;
+  position: sticky;
 }
 
   .links li {
