@@ -571,7 +571,6 @@ h6.title {
   padding: 0rem 5.8rem;
   width: 100%;
     height: 40rem;
-   transition: ..9s cubic-bezier(.68,-0.55,.27,1.55);
  }
 
  @keyframes fadeBlack {
